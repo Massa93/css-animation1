@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang=en>
+    <head>
+        <meta charset=utf-8>
+        <link rel="stylesheet" type="text/css" href="css/animation.css">
+        <title>My First animation</title>
+        <link rel="stylesheet" href="animationLogo.css">
+    </head>
+
+    <body>
+        
+        <p class="imag">
+            <img src="./images/IMG_20220819_154345_740 ID VERSION.jpg"alt="IMG_20220819_154345_740 ID VERSION" style="width:128px;height:128px;">
+        </p>
+
+        <div class="im1">
+            
+        </div>
+
+        <style>
+
+        :hover.imag{
+            background-color: green;
+            transform: translate(100%);
+            width: 250px;
+            height: 250px;
+            transition: 1s;
+            filter: brightness(100%);
+        }    
+
+                .im1{
+                    position: relative;
+                    left: 150px;
+                }
+
+                        /* The animation code */
+                @keyframes animatedSquare {
+                0%   {background-color: red;}
+                25%  {background-color: yellow;}
+                50%  {background-color: blue;}
+                100% {background-color: green;}
+                }
+
+                /* The element to apply the animation to */
+                div {
+                width: 100px;
+                height: 100px;
+                background-color: red;
+                animation-name: animatedSquare;
+                animation-duration: 4s;
+                animation-iteration-count: infinite;    
+                } 
+
+        </style>
+    </body>
+</html>
+
+
